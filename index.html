@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Gia phả - dTree</title>
+  <script src="http://www.nguyenkhoa.org/cms/includes/js/dtree/dtree.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h2>Phả hệ dòng họ Đỗ</h2>
+  <div class="dtree">
+    <script>
+      var d = new dTree('d', 'http://www.nguyenkhoa.org/cms/includes/js/dtree/img/');
+
+      d.add(0, -1, 'Phả hệ đồ');
+      d.add(1, 0, '000001 - Thỉ tổ: Đỗ Văn Lữ', 'index.php?option=com_giapha&task=view&manguoi=1');
+      d.add(2, 1, '000002 - Đỗ Văn Bản', 'index.php?option=com_giapha&task=view&manguoi=2');
+      d.add(3, 2, '000003 - Đỗ Văn (Nhánh bị thất lạc... )', 'index.php?option=com_giapha&task=view&manguoi=3');
+      d.add(4, 2, '000004 - Đỗ Văn Thái', 'index.php?option=com_giapha&task=view&manguoi=4');
+      d.add(5, 2, '000005 - Đỗ Văn Minh', 'index.php?option=com_giapha&task=view&manguoi=5');
+      d.add(6, 4, '000006 - Đỗ Văn An', 'index.php?option=com_giapha&task=view&manguoi=6');
+
+      document.write(d);
+    </script>
+  </div>
+</body>
+</html>
